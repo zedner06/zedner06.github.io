@@ -1,0 +1,434 @@
+/* Основные CSS */
+* {
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #443e3e;
+}
+
+a {
+	text-decoration: none;
+}
+
+p, ul, li {
+	margin: 0;
+    padding: 0;
+    font-size: 22px;
+	display: block;
+}
+
+.container {
+	width: 1240px;
+	margin: 0 auto;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 0;
+}
+
+.wrap {
+    display: flex;
+	justify-content: space-between;
+	padding: 50px 0;
+}
+
+main {
+    margin-top: 20px;
+    height: 650px;
+}
+
+/* CSS Шапки*/
+
+header {
+    text-transform: uppercase;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0), rgba(0,0,0, .4) 90%),url('../img/bg-pic.jpg') no-repeat center / cover;
+	height: 600px;
+}
+
+header a {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.5s;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 40px;
+}
+
+header a:not(.logo):hover {
+    padding: 10px 20px;
+    background: #261bc788;
+    color: #ffffff;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+
+header ul {
+	display: flex;
+}
+
+header ul li {
+    margin-left: 40px;
+}
+
+li p:last-child {
+	margin-top: 20px;
+}
+
+.logo {
+    border-radius: 0;
+    border-bottom: 2px solid #ffffff00;
+}
+
+.logo:hover {
+    border-bottom: 2px solid  #ffffff88;
+}
+
+/* СSS Текста на главной */
+
+.text_main {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.text_main > h1 {
+    font-size: 82px;
+    color: whitesmoke;
+}
+
+.text_main > p {
+    font-size: 25px;
+    color: #f5f5ff;
+}
+
+/* Секция после главного экрана */
+
+.first-section > h2 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+.first-section > p {
+    text-align: center;
+    margin-top: 32px;
+    color: whitesmoke;
+    font-weight: 400;
+}
+
+/* Карточки услуг на главной */
+
+.all-cards {
+    width: 1150px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.all-cards .card {
+    width: 300px;
+    height: 420px;
+    background: #ffffff;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.all-cards .card .circle {
+    width: 100%;
+    height: 100%;
+    background: #585656;
+    clip-path: circle(180px at center 0);
+    text-align: center;
+    transition: .5s;
+}
+
+.all-cards .card .circle > h2 {
+    color: #918e8e;
+    padding: 30px 0;
+    font-size: 4.5em;
+}
+
+.all-cards .card .content {
+    bottom: 10px;
+    text-align: center;
+}
+
+.all-cards .card .content > p{
+    margin-top: -190px;
+    color: #666666;
+}
+
+.all-cards .card .content > a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #000;
+    color: #ffffff;
+    border-radius: 40px;
+    text-decoration: none;
+    margin-top: 90px;
+}
+
+.all-cards .card .content > a:hover{
+    background: #261bc788;
+    color: #ffffff;
+}
+
+.card:hover {
+    background: #f1f1f1;
+}
+
+.all-cards .card .circle:hover {
+    background: #3d32d8;
+    transform: scale(1.02);
+}
+
+/* Cекция два в фале о нас */
+
+.second-section {
+    text-align: center;
+}
+
+.second-section > h2 {
+    margin-top: 30px;
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+.second-section > p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: whitesmoke;
+    font-family: 'Nanum Gothic', sans-serif;
+    padding-top: 30px;
+}
+
+/* Cекция три в файле Сервисы */
+
+.third-section {
+    text-align: center;
+}
+
+.third-section > h2 {
+    margin-top: 30px;
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+.box {
+    width: 50%; 
+    margin: 0 auto;
+}
+
+.box > h3 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 9px;
+    text-align: center;
+}
+
+input {
+    outline-style: none;
+    height: 32px;
+    width: 526px;
+    padding-left: 20px;
+}
+
+.form-control-btn {
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    background: #111111;
+    color: cornsilk;
+    padding: 0 20px;
+    border: none;
+    width: 200px;
+}
+
+.form-control-btn:hover {
+    background: #3d32d8;
+}
+
+.form-control-service {
+    margin-top: 20px;
+    padding-left: 20px;
+    height: 32px;
+    width: 540px;
+    outline-style: none;
+}
+
+.form-group {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.choose-service {
+    font-size: 32px;
+}
+
+/* Cекция четыре в файле Contact */
+
+.fourth-section {
+    text-align: center;
+}
+
+.fourth-section > h2 {
+    margin-top: 30px;
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+/* Связь с нами */
+
+.contact-section {
+    padding: 40px 0;
+}
+
+.contact-section h1 {
+    text-align: center;
+    color: #ddd;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.contact-form-text {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0px;
+    background: #111111;
+    padding: 20px 40px;
+    outline: none;
+    color: whitesmoke;
+}
+
+.contact-form-text:focus {
+    box-shadow: 0 0 10px 4px #34495e;
+}
+
+.textarea > contact-form-text {
+    height: 110px;
+}
+
+textarea {
+    resize: none;
+    height: 200px;
+}
+
+.contact-form-btn {
+    float: right;
+    border: 0;
+    background: #111111;
+    color: #ffffff;
+    padding: 8px 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form-btn:hover {
+    background: #3d32d8;
+}
+
+.contact-form > .contact-form-btn {
+    outline-style: none;
+    height: 32px;
+    width: 211px;
+}
+
+/* Админка */
+
+.wraper {
+    text-align: center;
+    margin-top: 40px;
+    width: 900px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    padding-top: 30px;
+}
+
+input {
+    margin: 20px 0;
+}
+
+.blog {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+
+}
+
+.navbar > a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.navbar > nav {
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+}
+
+li > .exit {
+    color: rgba(224, 55, 12, 0.836);
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+
+li > .exit:hover {
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+
+.sms {
+    color: #fff;
+    border: 5px solid #777;
+    border-radius: 3px;
+    padding: 50px;
+    margin-bottom: 12px;
+}
+
+.sms > h2 {
+    text-align: left;
+}
+
+.sms > p:last-child {
+    text-align: left;
+}
+
